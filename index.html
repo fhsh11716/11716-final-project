@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>復興圖書館</title>
+</head>
+
+<body>
+
+    <h1>復興圖書館</h1>
+
+    <div class="text-center">
+        <img src="assets/libraby.jpg" class="rounded ratio ratio-16x2" alt="libraby">
+    </div>
+
+    
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 ">
+        <a class="navbar-brand w-75 p-3 mb-2 text-info" href="#">主頁</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link " href="#scrollspyHeading1">Frist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <h4 id="scrollspyHeading1 ">簡介</h4>
+        <p class="text-sm-start">本校圖書館共有三層：</p>
+        <p class="text-md-start"> 一樓：書庫 </p>
+        <p class="text-md-start">二樓：辦公室、參考室、期刊區、閱覽區、電腦檢索上網區、媒體資源中心、數位閱讀室 </p>
+        <p class="text-md-start">三樓：自習室、雲端教室、學習社群中心、視聽媒體室、社群研討室</p>
+        <p class="text-md-start"> 戶外閱讀區：露台閱讀區</p>
+
+
+        <h4 id="scrollspyHeading2">圖書查詢</h4>
+        <p><select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>類型資料</option>
+                <option value="1">圖書</option>
+                <option value="2">漫畫</option>
+                <option value="3">雜期刊</option>
+                <option value="4">光碟</option>
+                <option value="5">地圖</option>
+                <option value="6">參考書</option>
+            </select>
+
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>年代</option>
+                <option value="1">2012</option>
+                <option value="2">2013</option>
+                <option value="3">2014</option>
+                <option value="4">2015</option>
+                <option value="5">2016</option>
+                <option value="6">2017</option>
+                <option value="7">2018</option>
+                <option value="8">2019</option>
+                <option value="9">2020</option>
+                <option value="10">2021</option>
+                <option value="11">2022</option>
+            </select>
+        </p>
+
+        <input class="form-control form-control-lg" type="text" placeholder="關鍵字" aria-label=".form-control-lg example">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">書刊名</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">作者</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">標題</label>
+
+        </div>
+        <h5>單一條件</h5>
+        <input class="form-control form-control-lg" type="text" placeholder="書名" aria-label=".form-control-lg example">
+        <input class="form-control form-control-lg" type="text" placeholder="出版社" aria-label=".form-control-lg example">
+        <input class="form-control form-control-lg" type="text" placeholder="作者" aria-label=".form-control-lg example">
+        <input class="form-control form-control-lg" type="text" placeholder="索書號" aria-label=".form-control-lg example">
+
+        <button type="button" class="btn btn-primary btn-sm">開始查詢</button>
+        <button type="button" class="btn btn-secondary btn-sm">清除重填</button>
+
+        <h4 id="scrollspyHeading3">圖書推薦</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/人生超整理.jpg" class=" d-block w-40" alt="人生超整理">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/六個說謊的大學生.jpg" class=" d-block w-40" alt="六個說謊的大學生">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/發現天賦之旅.jpg" class=" d-block w-40" alt="發現天賦之旅">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/蛤蟆先生去看心理師.jpg" class=" d-block w-40" alt="蛤蟆先生去看心理師">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            
+               
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+                    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
